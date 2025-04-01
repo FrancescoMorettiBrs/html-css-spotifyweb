@@ -1,0 +1,98 @@
+/* RESET */
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* UTILITIES */
+.font-white {
+  color: #ffffff;
+}
+
+/* COMMON */
+/* LAYOUT */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.col {
+    display: flex;
+}
+
+.col div {
+    width: calc(100% / 6);
+}
+/* ROW */
+.row-top {
+  width: 100%;
+  display: flex;
+}
+
+.row-bottom {
+  width: 100%;
+  height: 90px;
+  background-color: #282828;
+}
+/* COL-LEFT*/
+.col-left {
+  width: 20%;
+  background-color: #000000;
+  padding: 15px;
+}
+
+.col-left ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.col-right {
+  width: 80%;
+  background-color: #141922;
+  padding: 15px;
+}
+
+.col-right ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation-list li {
+  margin-bottom: 15px;
+}
+
+.navigation-list-main ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+/* COL-RIGHT */
+.banner {
+  background-color: rgba(255, 255, 255, 0.05); /* semi-trasparente */
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upgrade-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
