@@ -3,6 +3,7 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -14,12 +15,16 @@ img {
   color: #ffffff;
 }
 
-.mr-15 {
-  margin-right: 15px;
+.mr-20 {
+  margin-right: 20px;
 }
 
 .pd-20 {
   padding: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
 
 /* COMMON */
@@ -32,18 +37,38 @@ img {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: calc(100% - 90px);
 }
 
 .col {
   display: flex;
+  width: 100%;
 }
 
+h6 {
+  color: #7d7f84;
+  font-weight: 900;
+}
+
+h5 {
+  font-weight: 900;
+  margin-bottom: 0px;
+}
 .col div {
   width: calc(100% / 6);
 }
+
+.col-right h3,
+.col-right h2 {
+  font-size: 1vw;
+}
+
+.col-right h6 {
+  font-size: 0.7vw;
+}
 /* ROW */
 .row-top {
+  height: calc(100% - 100px);
   width: 100%;
   display: flex;
 }
@@ -52,12 +77,17 @@ img {
   width: 100%;
   height: 90px;
   background-color: #282828;
+  position: sticky;
+  bottom: 0;
 }
 /* COL-LEFT*/
 .col-left {
   width: 250px;
+  height: 100vh;
   background-color: #000000;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
 }
 
@@ -66,10 +96,64 @@ img {
   list-style: none;
 }
 
-.col-left img {
+.col-left {
+  width: 250px;
+}
+
+.logo-nav {
+  height: 25%;
+}
+
+#logo-spotify {
   width: 60%;
 }
 
+.icon-nav {
+  gap: 10px;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.icon-nav img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.icon-nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-nav span {
+  font-size: 0.9rem;
+}
+
+.navigation-list ul li {
+  font-size: 1.2rem;
+}
+
+/* PLAYLIST */
+.playlist {
+  height: 75%;
+}
+
+.playlist li {
+  margin-bottom: 20px;
+}
+
+.playlist-btn {
+  font-size: 2rem;
+  display: flex;
+  gap: 5px;
+}
+
+.playlist h4 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+/* COL-RIGHT */
 .col-right {
   width: calc(100vw - 250px);
   background-color: #141922;
@@ -83,7 +167,8 @@ img {
 }
 
 .navigation-list li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
 }
 
 .navigation-list-main ul {
@@ -94,6 +179,7 @@ img {
 }
 /* COL-RIGHT */
 .banner {
+  /* width: 100%; */
   background-color: #080b12;
   padding: 1rem;
   text-align: end;
@@ -112,6 +198,16 @@ img {
   cursor: pointer;
 }
 /* ALBUM */
-.heavy-metal {
+.album {
   text-align: center;
+}
+
+.album h6,
+.album h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.circle-img {
+  border-radius: 50%;
 }
