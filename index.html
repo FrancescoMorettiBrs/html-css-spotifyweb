@@ -22,14 +22,14 @@
     <main>
       <div class="wrapper">
         <!-- TOP CONTENT -->
-        <section class="row-top font-white">
+        <section class="row-top">
           <!-- LEFT-COL -->
           <div class="col-left">
             <div class="logo-nav">
               <img id="logo-spotify" src="./img/logo.svg" alt="logo" />
               <nav class="navigation-list">
-                <ul class="icon-nav">
-                  <li><img src="./img/home.svg" alt="" /><span> Home</span></li>
+                <ul class="icon-nav font-grey">
+                  <li class="green-line-left"><img src="./img/home.svg" alt="" /><span> Home</span></li>
                   <li>
                     <img src="./img/search.svg" alt="" /><span> Cerca</span>
                   </li>
@@ -41,13 +41,21 @@
                 </ul>
               </nav>
             </div>
-            <div class="playlist">
+            <h4><strong class="font-white">PLAYLIST</strong></h4>
+            <div class="playlist-btn mt-10 font-grey">
+              <i class="fa-solid fa-square-plus square-plus"></i>
+              <p>Crea Playlist</p>
+            </div>
+            <div class="playlist font-grey">
               <nav>
-                <h4><strong>PLAYLIST</strong></h4>
-                <i class="fa-solid fa-square-plus playlist-btn"
-                  ><h4 style="font-size: 0.9rem">Crea Playlist</h4></i
-                >
                 <ul>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
@@ -57,6 +65,17 @@
                   <li>Nome Playlist</li>
                 </ul>
               </nav>
+            </div>
+            <div class="mt-10 bottom-nav font-grey">
+              <div class="install">
+                <img class="install-img" src="./img/download.svg" alt="" />
+                <span> Installa App</span>
+              </div>
+              <hr class="mt-10" />
+              <div class="profile mt-10">
+                <img class="profile-img" src="./img/profile.svg" alt="" />
+                <span> John Doe</span>
+              </div>
             </div>
           </div>
           <!-- FINE LEFT-COL -->
@@ -68,8 +87,8 @@
             </header>
             <div class="pd-20">
               <nav class="navigation-list-main">
-                <ul>
-                  <li>IN EVIDENZA</li>
+                <ul class="font-grey">
+                  <li class="green-line-bottom">IN EVIDENZA</li>
                   <li>PODCAST</li>
                   <li>CLASSIFICHE</li>
                   <li>GENERI E MOOD</li>
@@ -77,65 +96,76 @@
                   <li>SCOPRI</li>
                 </ul>
               </nav>
-              <h2>Recently Played</h2>
+              <h2 class="mt-25 font-white">Recently Played</h2>
               <div>
-                <div class="col">
+                <div class="col mt-25 mb-25">
                   <div class="album mr-20">
+                    <div></div>
                     <img src="./img/metal_lifting.jpg" alt="" />
-                    <h3>Heavy Metal</h3>
-                    <h6>Subtitle</h6>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">Heavy Metal</h5>
+                    <div class="subtitle">Subtitle</div>
                   </div>
                   <div class="album mr-20">
                     <img src="./img/stranger.jpeg" alt="" />
-                    <h3>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">
                       Stranger Things, Vol. 1 (a Netflix Original Series
                       Soundtrack)
-                    </h3>
-                    <h6>Kyle Dixon & Micheal Stein</h6>
+                    </h5>
+                    <div class="subtitle">Kyle Dixon & Micheal Stein</div>
                   </div>
                   <div class="album mr-20">
                     <img src="./img/aquietplace.jpeg" alt="" />
-                    <h3>A quiet place</h3>
-                    <h6>Subtitle</h6>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">A quiet place</h5>
+                    <div class="subtitle">Subtitle</div>
                   </div>
                   <div class="album mr-20">
                     <img src="./img/split.jpeg" alt="" />
-                    <h3>Split</h3>
-                    <h6>Subtitle</h6>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">Split</h5>
+                    <div class="subtitle">Subtitle</div>
                   </div>
                   <div class="album mr-20">
                     <img src="./img/cure.jpeg" alt="" />
-                    <h3>A cure for wellness</h3>
-                    <h6>Subtitle</h6>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">A cure for wellness</h5>
+                    <div class="subtitle">Subtitle</div>
                   </div>
                   <div class="album">
                     <img src="./img/sinister.jpeg" alt="" />
-                    <h3>Sinister</h3>
-                    <h6>Subtitle</h6>
+                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <h5 class="mt-10 font-white">Sinister</h5>
+                    <div class="subtitle">Subtitle</div>
                   </div>
                 </div>
-                <h2>Creato per John Doe</h2>
-                <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+                <h2 class="font-white">Creato per John Doe</h2>
+                <div class="subtitle mt-10 mb-25 font-grey">
+                  Più ascolti, più accurati saranno i suggerimenti
+                </div>
                 <div class="col mb-25">
                   <div class="album mr-20">
                     <img src="./img/radar.jpeg" alt="" />
-                    <h3>Release Radar</h3>
+                    <h5 class="mt-10 font-white">Release Radar</h5>
                   </div>
                   <div class="album">
                     <img src="./img/mixdaily.jpeg" alt="" />
-                    <h3>Daily Mix 1</h3>
+                    <h5 class="mt-10 font-white">Daily Mix 1</h5>
                   </div>
                 </div>
-                <h2>Artisti più popolari</h2>
-                <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+                <h2 class="font-white">Artisti più popolari</h2>
+                <div class="subtitle mt-10 mb-25 font-grey">
+                  Più ascolti, più accurati saranno i suggerimenti
+                </div>
                 <div class="col">
                   <div class="album mr-20">
                     <img class="circle-img" src="./img/youg.jpeg" alt="" />
-                    <h3>Lana Del Rey</h3>
+                    <h5 class="mt-10 font-white">Lana Del Rey</h5>
                   </div>
                   <div class="album">
                     <img class="circle-img" src="./img/einaudi.jpeg" alt="" />
-                    <h3>Ludovico Einaudi</h3>
+                    <h5 class="mt-10 font-white">Ludovico Einaudi</h5>
                   </div>
                 </div>
               </div>
