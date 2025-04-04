@@ -1,0 +1,64 @@
+/* DESKTOP 1024PX */
+@media screen and (max-width: 1024px) {
+  .col {
+    flex-wrap: wrap;
+  }
+  .album {
+    flex: 0 0 calc(25% - 20px);
+  }
+  .navigation-list-main ul {
+    flex-wrap: wrap;
+    flex: 0 0 calc(20% - 15px);
+  }
+}
+/* TABLET 768PX */
+@media screen and (max-width: 768px) {
+  .album {
+    flex: 0 0 calc(50% - 20px);
+  }
+  .navigation-list-main ul {
+    flex: 0 0 calc(50% - 20px);
+  }
+} 
+
+@media screen and (max-width: 480px) {
+  .col-left {
+    width: 50px;
+    padding: 5px 8px;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+
+  .col-right {
+    width: calc(100vw - 50px);
+  }
+
+  #logo-spotify {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .playlist-btn {
+    display: none;
+  }
+
+  .col-left h4 {
+    display: none;
+  }
+
+  .col-left span {
+    display: none;
+  }
+
+  .col-left hr {
+    display: none;
+  }
+}

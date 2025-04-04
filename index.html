@@ -27,13 +27,16 @@
           <div class="col-left">
             <div class="logo-nav">
               <img id="logo-spotify" src="./img/logo.svg" alt="logo" />
+              <img src="./img/logo-small.svg" alt="" class="logo-small" />
               <nav class="navigation-list">
                 <ul class="icon-nav font-grey">
-                  <li class="green-line-left"><img src="./img/home.svg" alt="" /><span> Home</span></li>
-                  <li>
+                  <li class="green-line-left">
+                    <img src="./img/home.svg" alt="" /><span> Home</span>
+                  </li>
+                  <li class="green-line-left">
                     <img src="./img/search.svg" alt="" /><span> Cerca</span>
                   </li>
-                  <li>
+                  <li class="green-line-left">
                     <img src="./img/libreria.svg" alt="" /><span>
                       La tua libreria</span
                     >
@@ -49,13 +52,6 @@
             <div class="playlist font-grey">
               <nav>
                 <ul>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
                   <li>Nome Playlist</li>
@@ -89,53 +85,72 @@
               <nav class="navigation-list-main">
                 <ul class="font-grey">
                   <li class="green-line-bottom">IN EVIDENZA</li>
-                  <li>PODCAST</li>
-                  <li>CLASSIFICHE</li>
-                  <li>GENERI E MOOD</li>
-                  <li>NUOVE USCITE</li>
-                  <li>SCOPRI</li>
+                  <li class="green-line-bottom">PODCAST</li>
+                  <li class="green-line-bottom">CLASSIFICHE</li>
+                  <li class="green-line-bottom">GENERI E MOOD</li>
+                  <li class="green-line-bottom">NUOVE USCITE</li>
+                  <li class="green-line-bottom">SCOPRI</li>
                 </ul>
               </nav>
               <h2 class="mt-25 font-white">Recently Played</h2>
               <div>
                 <div class="col mt-25 mb-25">
-                  <div class="album mr-20">
-                    <div></div>
-                    <img src="./img/metal_lifting.jpg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
+                  <div class="album">
+                    <div class="album-img-wrapper">
+                      <img
+                        class="album-img"
+                        src="./img/metal_lifting.jpg"
+                        alt=""
+                      />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Heavy Metal</h5>
                     <div class="subtitle">Subtitle</div>
                   </div>
-                  <div class="album mr-20">
-                    <img src="./img/stranger.jpeg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
-                    <h5 class="mt-10 font-white">
+                  <div class="album">
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/stranger.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
+                    <h5 class="mt-10 font-white title-size">
                       Stranger Things, Vol. 1 (a Netflix Original Series
                       Soundtrack)
                     </h5>
                     <div class="subtitle">Kyle Dixon & Micheal Stein</div>
                   </div>
-                  <div class="album mr-20">
-                    <img src="./img/aquietplace.jpeg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
+                  <div class="album">
+                    <div class="album-img-wrapper">
+                      <img
+                        class="album-img"
+                        src="./img/aquietplace.jpeg"
+                        alt=""
+                      />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">A quiet place</h5>
                     <div class="subtitle">Subtitle</div>
                   </div>
-                  <div class="album mr-20">
-                    <img src="./img/split.jpeg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
+                  <div class="album">
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/split.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Split</h5>
                     <div class="subtitle">Subtitle</div>
                   </div>
-                  <div class="album mr-20">
-                    <img src="./img/cure.jpeg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
+                  <div class="album">
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/cure.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">A cure for wellness</h5>
                     <div class="subtitle">Subtitle</div>
                   </div>
                   <div class="album">
-                    <img src="./img/sinister.jpeg" alt="" />
-                    <i class="fa-regular fa-circle-play play-button"></i>
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/sinister.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Sinister</h5>
                     <div class="subtitle">Subtitle</div>
                   </div>
@@ -146,11 +161,17 @@
                 </div>
                 <div class="col mb-25">
                   <div class="album mr-20">
-                    <img src="./img/radar.jpeg" alt="" />
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/radar.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Release Radar</h5>
                   </div>
                   <div class="album">
-                    <img src="./img/mixdaily.jpeg" alt="" />
+                    <div class="album-img-wrapper">
+                      <img class="album-img" src="./img/mixdaily.jpeg" alt="" />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Daily Mix 1</h5>
                   </div>
                 </div>
@@ -160,11 +181,25 @@
                 </div>
                 <div class="col">
                   <div class="album mr-20">
-                    <img class="circle-img" src="./img/youg.jpeg" alt="" />
+                    <div class="album-img-wrapper">
+                      <img
+                        class="album-img circle-img"
+                        src="./img/youg.jpeg"
+                        alt=""
+                      />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Lana Del Rey</h5>
                   </div>
                   <div class="album">
-                    <img class="circle-img" src="./img/einaudi.jpeg" alt="" />
+                    <div class="album-img-wrapper">
+                      <img
+                        class="album-img circle-img"
+                        src="./img/einaudi.jpeg"
+                        alt=""
+                      />
+                      <i class="fa-regular fa-circle-play play-button"></i>
+                    </div>
                     <h5 class="mt-10 font-white">Ludovico Einaudi</h5>
                   </div>
                 </div>
@@ -174,7 +209,51 @@
           <!-- FINE COL-RIGHT -->
         </section>
       </div>
-      <section class="row-bottom"></section>
+      <!-- INIZIO BOTTOM BAR -->
+      <section class="row-bottom font-white">
+        <div class="song-info">
+          <img src="./img/player_left.jpg" alt="cover" />
+          <div class="details">
+            <div class="title">Sinister</div>
+            <div class="artist">Brano Nome</div>
+          </div>
+          <div class="icon-left-side">
+            <i class="fa-regular fa-heart font-grey"></i>
+            <i class="fa-regular fa-folder font-grey"></i>
+          </div>
+        </div>
+
+        <div class="player-controls">
+          <div class="buttons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-circle-play play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-repeat"></i>
+          </div>
+          <div class="progress">
+            <span class="time">0:25</span>
+            <div class="bar">
+              <div class="filled">
+                <div class="play-thumb"></div>
+              </div>
+            </div>
+            <span class="time">4:35</span>
+          </div>
+        </div>
+
+        <div class="right-controls">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="volume-bar">
+            <div class="volume-filled">
+              <div class="volume-thumb"></div>
+            </div>
+          </div>
+        </div>
+        <!-- FINE BOTTOM BAR -->
+      </section>
     </main>
     <!-- FINE MAIN -->
   </body>
