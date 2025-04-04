@@ -85,23 +85,42 @@ img {
 }
 
 .green-line-bottom {
-  padding-bottom: 8px;
+  position: relative;
   cursor: pointer;
 }
 
-.green-line-bottom:hover {
-  border-bottom: 2px solid #1db954;
+.green-line-bottom::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: 130%;
+  height: 2px;
+  width: 0;
+  background-color: #1db954;
+}
 
+.green-line-bottom:hover::after {
+  width: 40%;
 }
 
 .green-line-left {
-  padding-left: 8px;
+  position: relative;
+  cursor: pointer;
 }
 
-.green-line-left:hover {
-  border-left: 2px solid #1db954;
+.green-line-left::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 2px;
+  height: 0%;
+  background-color: #1db954;
 }
 
+.green-line-left:hover::after {
+  height: 100%;
+}
 .icon-left-side i:hover {
   color: #ffffff;
   cursor: pointer;
@@ -330,7 +349,6 @@ h2 {
   border-radius: 50%;
 }
 
-
 /* BOTTOM BAR */
 .row-bottom {
   display: flex;
@@ -468,9 +486,9 @@ h2 {
   width: 30%;
   height: 100%;
   background-color: #b3b3b3;
-  cursor: pointer;
   position: relative;
   overflow: visible;
+  cursor: pointer;
 }
 
 .volume-thumb {
